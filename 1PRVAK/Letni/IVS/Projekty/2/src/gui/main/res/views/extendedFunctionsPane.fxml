@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml"
+          xmlns="http://javafx.com/javafx"
+          fx:controller="ivs.ignis.gui.controllers.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="ALWAYS" halignment="CENTER" maxWidth="100.0" />
+        <ColumnConstraints hgrow="ALWAYS" halignment="CENTER" maxWidth="100.0" />
+        <ColumnConstraints hgrow="ALWAYS" halignment="CENTER" maxWidth="100.0" />
+        <ColumnConstraints hgrow="ALWAYS" halignment="CENTER" maxWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" valignment="CENTER" maxHeight="Infinity" />
+    </rowConstraints>
+
+</GridPane>

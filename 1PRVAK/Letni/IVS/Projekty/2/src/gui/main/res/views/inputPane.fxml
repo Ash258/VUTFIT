@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.*?>
+<?import org.fxmisc.richtext.InlineCssTextArea?>
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      xmlns="http://javafx.com/javafx/8.0.121"
+      fx:controller="ivs.ignis.gui.controllers.Controller">
+
+    <Label fx:id="inputLabel"
+           maxWidth="1.7976931348623157E308" />
+
+    <AnchorPane>
+        <InlineCssTextArea fx:id="inputField"
+                           AnchorPane.topAnchor="0"
+                           AnchorPane.bottomAnchor="0"
+                           AnchorPane.leftAnchor="0"
+                           AnchorPane.rightAnchor="0">
+            <padding>
+                <Insets top="5" bottom="5" right="35" />
+            </padding>
+        </InlineCssTextArea>
+
+        <ScrollBar fx:id="inputBar"
+                   AnchorPane.topAnchor="0"
+                   AnchorPane.bottomAnchor="0"
+                   AnchorPane.rightAnchor="0"
+                   orientation="VERTICAL" />
+    </AnchorPane>
+</VBox>

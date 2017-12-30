@@ -1,0 +1,8 @@
+[Desktop Entry]
+Categories=Java;Ignis;
+Exec=java -jar /usr/local/bin/Ignis-1.0-SNAPSHOT.jar
+GenericName=Calculator
+Icon=/usr/share/icons/Ignis.ico
+Name=Ignis Calculator
+Type=Application
+X-KDE-StartupNotify=false

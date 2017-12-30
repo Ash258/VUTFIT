@@ -1,0 +1,82 @@
+{
+	"markdown.extension.orderedList.marker": "one",
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"editor.tabCompletion": true,
+	"editor.wordWrap": "on",
+	"files.insertFinalNewline": true,
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/*.mp4": true,
+		"**/Přednášky 2016": true
+	},
+	"files.trimTrailingWhitespace": true,
+	// region Markdown
+	"[markdown]": {
+		"editor.insertSpaces": true,
+		"editor.quickSuggestions": {
+			"other": true,
+			"comments": true,
+			"strings": true
+		},
+		"editor.tabSize": 4
+	},
+	"markdown.extension.italic.indicator": "_",
+	"markdown.extension.toc.plaintext": false,
+	"markdown.extension.toc.updateOnSave": false,
+	"markdownlint.config": {
+		"MD025": false,
+		"MD007": false,
+		"MD033": false,
+		"MD041": false
+	},
+	// endregion
+	// region Latex
+	"[latex]": {
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4
+	},
+	"latex-workshop.chktex.interval": 1000,
+	"latex-workshop.chktex.enabled": true,
+	"latex-workshop.latex.autoBuild.onSave.enabled": true,
+	"latex-workshop.latex.clean.fileTypes": [
+		"*.aux",
+		"*.bbl",
+		"*.blg",
+		"*.idx",
+		"*.ind",
+		"*.lof",
+		"*.lot",
+		"*.out",
+		"*.toc",
+		"*.acn",
+		"*.acr",
+		"*.alg",
+		"*.glg",
+		"*.glo",
+		"*.gls",
+		"*.ist",
+		"*.fls",
+		"*.log",
+		"*.synctex.gz",
+		"*.fdb_latexmk",
+		"*.vpp.bak_*"
+	],
+	// Need texlive in Path
+	"latex-workshop.latex.toolchain": [
+		{
+			"command": "pdflatex",
+			"args": [
+				"-synctex=1",
+				"-interaction=nonstopmode",
+				"-file-line-error",
+				"%DOC%"
+			]
+		}
+	]
+	// endregion
+}

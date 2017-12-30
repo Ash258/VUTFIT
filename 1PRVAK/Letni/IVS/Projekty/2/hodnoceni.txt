@@ -1,0 +1,4 @@
+xparma02 100
+xbargl01 100
+xcaber00 100
+xsimon24 100

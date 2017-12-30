@@ -1,0 +1,8 @@
+Package: IVS-Calculator
+Version: 1.0
+Section: misc
+Priority: optional
+Maintainer: Jakub "Ash258" Čábera <xcaber00@stud.fit.vutbr.cz>
+Architecture: all
+Depends: default-jre, openjfx
+Description: School IVS project.

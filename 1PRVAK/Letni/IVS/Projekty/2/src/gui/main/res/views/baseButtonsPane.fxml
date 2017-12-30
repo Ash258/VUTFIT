@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1"
+          xmlns="http://javafx.com/javafx/8.0.121"
+          fx:controller="ivs.ignis.gui.controllers.Controller"
+          hgap="2.0" vgap="2.0"
+          maxWidth="Infinity" maxHeight="Infinity">
+
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" maxHeight="Infinity" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" maxHeight="Infinity" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" maxHeight="Infinity" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" maxHeight="Infinity" />
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS" maxHeight="Infinity" />
+    </rowConstraints>
+
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="0"
+            onMouseClicked="#processInput" text="CA" />
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="1"
+            onMouseClicked="#processInput" styleClass="backspace" text="BACK" />
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="2"
+            onMouseClicked="#processInput" text="Ans" />
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="3"
+            onMouseClicked="#processInput" styleClass="operator" text="÷" />
+
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="0"
+            onMouseClicked="#processInput" styleClass="numbers" text="7" />
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="1"
+            onMouseClicked="#processInput" styleClass="numbers" text="8" />
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="2"
+            onMouseClicked="#processInput" styleClass="numbers" text="9" />
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="3"
+            onMouseClicked="#processInput" styleClass="operator" text="*" />
+
+    <Button GridPane.rowIndex="2" GridPane.columnIndex="0"
+            onMouseClicked="#processInput" styleClass="numbers" text="4" />
+    <Button GridPane.rowIndex="2" GridPane.columnIndex="1"
+            onMouseClicked="#processInput" styleClass="numbers" text="5" />
+    <Button GridPane.rowIndex="2" GridPane.columnIndex="2"
+            onMouseClicked="#processInput" styleClass="numbers" text="6" />
+    <Button GridPane.rowIndex="2" GridPane.columnIndex="3"
+            onMouseClicked="#processInput" styleClass="operator" text="-" />
+
+    <Button GridPane.rowIndex="3" GridPane.columnIndex="0"
+            onMouseClicked="#processInput" styleClass="numbers" text="1" />
+    <Button GridPane.rowIndex="3" GridPane.columnIndex="1"
+            onMouseClicked="#processInput" styleClass="numbers" text="2" />
+    <Button GridPane.rowIndex="3" GridPane.columnIndex="2"
+            onMouseClicked="#processInput" styleClass="numbers" text="3" />
+    <Button GridPane.rowIndex="3" GridPane.columnIndex="3"
+            onMouseClicked="#processInput" styleClass="operator" text="+" />
+
+    <Button GridPane.rowIndex="4" GridPane.columnIndex="0"
+            onMouseClicked="#processInput" text="n!" />
+    <Button GridPane.rowIndex="4" GridPane.columnIndex="1"
+            onMouseClicked="#processInput" styleClass="numbers" text="0" />
+    <Button GridPane.rowIndex="4" GridPane.columnIndex="2"
+            onMouseClicked="#processInput" text="." />
+    <Button GridPane.rowIndex="4" GridPane.columnIndex="3"
+            onMouseClicked="#processInput" styleClass="equal" text="=" />
+</GridPane>

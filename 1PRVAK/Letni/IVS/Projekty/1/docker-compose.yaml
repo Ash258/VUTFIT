@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    c_develop:
+        build:
+            context: .
+            dockerfile: ./Dockerfile
+        container_name: c_develop
+        volumes:
+            - .:/assignment

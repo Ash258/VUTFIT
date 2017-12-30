@@ -1,0 +1,15 @@
+# To apply this config, copy this content into `.gitconfig` file and  run `git config --local include.path ../.gitconfig`
+[user]
+    # Change these to your credentials
+	name = John Doe
+	email = johndoe@example.com
+
+[core]
+    # This transform all CRLF to LF before commit and LF to CRLF before checkout
+    # Use `autocrlf = input` on Unix/Linux/OS X, it will convert CRLF to LF before commit (one way only)
+    autocrlf = true
+
+[alias]
+    # Here you can add aliases
+    s = status
+    cm = commit -m

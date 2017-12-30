@@ -1,0 +1,22 @@
+
+#calculator {
+    -fx-background-color : black;
+}
+
+Button, Label, InlineCssTextArea * {
+    -fx-font-size : 20px;
+}
+
+InlineCssTextArea {
+    -fx-background-color : #CDCDCD;
+    -fx-font-weight      : bold;
+}
+
+Label {
+    -fx-text-fill : #CDCDCD;
+}
+
+#inputLabel {
+    -fx-font-weight : bolder;
+    -fx-font-size   : 23;
+}

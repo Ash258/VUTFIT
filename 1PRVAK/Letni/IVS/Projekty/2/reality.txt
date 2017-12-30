@@ -1,0 +1,13 @@
+Během vývoje nás napadala různá krásná rozšíření, na která nám bohužel nevyšel čas, kvůli náročnosti ostatních předmětů v semestru. Smyslem projektu bylo ale vyzkoušet si různé technologie a procesy vývoje, což sme respektovali.
+
+ Review jsme dělali zodpovědně pro každé mergování nových funkcionalit.
+
+ Continuous build nám kontroloval nové commity ve větvích.
+
+ Youtrack jsme poctivě používali pro plánování projektu.
+
+ Slack nám sloužil pro interní komunikaci.
+
+
+Členové týmu plnili své povinnosti pečlivě.
+

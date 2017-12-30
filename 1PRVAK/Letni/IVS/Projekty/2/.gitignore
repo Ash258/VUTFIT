@@ -1,0 +1,8 @@
+.idea/
+.gitconfig
+.gradle/
+build/
+docs/technical/doxygen
+
+~$*.docx
+~*.tmp

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            xmlns="http://javafx.com/javafx/8.0.121"
+            fx:id="calculator"
+            fx:controller="ivs.ignis.gui.controllers.Controller"
+            prefHeight="500.0"
+            prefWidth="400.0">
+
+    <!-- Menu | Mode -->
+    <fx:include source="topPane.fxml" fx:id="topPane"
+                AnchorPane.topAnchor="0.0"
+                AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0"
+                prefHeight="45.0" />
+
+    <VBox AnchorPane.topAnchor="45.0"
+          AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0"
+          AnchorPane.rightAnchor="0.0"
+          alignment="TOP_CENTER">
+
+        <!-- Inputs -->
+        <fx:include source="inputPane.fxml"
+                    fx:id="inputPane"
+                    VBox.vgrow="ALWAYS" />
+
+        <!-- Extended Functions -->
+        <fx:include source="extendedFunctionsPane.fxml"
+                    fx:id="extendedFunctionsPane"
+                    VBox.vgrow="ALWAYS"
+                    prefHeight="50" />
+
+        <!-- Base Buttons -->
+        <fx:include source="baseButtonsPane.fxml"
+                    fx:id="baseButtonsPane"
+                    VBox.vgrow="ALWAYS"
+                    prefHeight="250" />
+
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </VBox>
+
+    <stylesheets>
+        <URL value="@../css/main.css" />
+        <URL value="@../css/buttons.css" />
+    </stylesheets>
+
+</AnchorPane>

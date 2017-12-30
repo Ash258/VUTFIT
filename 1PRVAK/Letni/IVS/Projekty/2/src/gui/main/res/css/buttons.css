@@ -1,0 +1,34 @@
+Button {
+    -fx-background-color : #010101;
+    -fx-text-fill        : #FFF;
+    -fx-text-alignment   : center;
+    -fx-cursor           : hand;
+    -fx-pref-width       : 120;
+    -fx-pref-height      : 100;
+}
+
+Button:hover {
+    -fx-font-weight   : bold;
+    -fx-border-color  : white;
+    -fx-border-radius : 3px;
+}
+
+Button.numbers {
+    -fx-font-weight : bold;
+}
+
+Button.operator {
+    -fx-font-weight : bold;
+}
+
+.backspace {
+    -fx-text-fill           : transparent;
+    -fx-background-image    : url("/images/backspace.png");
+    -fx-font-size           : 45%;
+    -fx-background-repeat   : no-repeat;
+    -fx-background-size     : 45%;
+    -fx-background-position : center }
+
+.equal {
+    -fx-background-color : #80007C
+}

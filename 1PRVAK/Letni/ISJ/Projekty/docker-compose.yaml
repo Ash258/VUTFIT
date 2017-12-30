@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    python_devel:
+        image: python:slim
+        container_name: pyth_devel
+        command: tail -f /dev/null
+        working_dir: /code
+        volumes:
+            - .:/code

@@ -1,0 +1,10 @@
+{
+	"recommendations": [
+		"yzhang.markdown-all-in-one",
+		"adammaras.overtype",
+		"DavidAnson.vscode-markdownlint",
+		"puorc.awesome-vhdl",
+		"k--kato.intellij-idea-keybindings",
+		"James-Yu.latex-workshop"
+	]
+}

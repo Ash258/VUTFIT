@@ -1,0 +1,11 @@
+**/*.mp4
+**/Písemky/
+**/.idea/
+**/cmake-build-debug/
+# Latex
+**/*.aux
+**/*.bbl
+**/*.blg
+**/*.log
+**/*.out
+**/*.synctex.gz
