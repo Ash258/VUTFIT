@@ -1,5 +1,4 @@
 {
-	"markdown.extension.orderedList.marker": "one",
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
 	"editor.tabCompletion": true,
@@ -26,6 +25,8 @@
 		"editor.tabSize": 4
 	},
 	"markdown.extension.italic.indicator": "_",
+	"markdown.extension.orderedList.marker": "one",
+	"markdown.extension.tableFormatter.enabled": true,
 	"markdown.extension.toc.plaintext": false,
 	"markdown.extension.toc.updateOnSave": false,
 	"markdownlint.config": {
