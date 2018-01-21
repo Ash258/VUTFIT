@@ -125,6 +125,8 @@
 | Semestrálka    | 60    |
 <!-- TODO: Copy from Main README.md -->
 
+<!-- region Done -->
+
 ## [BAN3](https://www.fit.vutbr.cz/study/courses/index.php?id=11338 "BAN3")
 
 - [x] Zápočtový test
@@ -163,3 +165,5 @@
 - [x] [Půlsemestrálka](./Letni/IVS/1%20-%20Půlsemestrálka.md "Půlsemestrálka")
 - [x] Zápočet
     - Minimálně 50 bodů
+
+<!-- endregion Done -->
