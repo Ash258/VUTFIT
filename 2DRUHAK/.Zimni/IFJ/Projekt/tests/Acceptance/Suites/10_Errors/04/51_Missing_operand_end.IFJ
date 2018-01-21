@@ -1,0 +1,5 @@
+' Missing operand in expression
+
+scope
+    print 2 - 9 +;
+end scope

@@ -1,0 +1,5 @@
+' Wrong operand types
+
+scope
+    print !"foo" + 6;
+end scope

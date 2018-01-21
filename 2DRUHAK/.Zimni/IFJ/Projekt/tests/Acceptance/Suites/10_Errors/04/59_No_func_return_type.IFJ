@@ -1,0 +1,7 @@
+' Missing return data type II
+
+function foo() as
+end function
+
+scope
+end scope

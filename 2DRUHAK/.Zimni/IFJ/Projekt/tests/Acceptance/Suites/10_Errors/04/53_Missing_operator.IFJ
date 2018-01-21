@@ -1,0 +1,5 @@
+' Missing operator
+
+scope
+    print (5 + 9)(2 + 3);
+end scope

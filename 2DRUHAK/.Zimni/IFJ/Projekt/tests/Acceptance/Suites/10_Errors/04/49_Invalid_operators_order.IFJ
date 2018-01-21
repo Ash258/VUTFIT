@@ -1,0 +1,5 @@
+' Invalid operators order
+
+scope
+    print 258 + * 28;
+end scope

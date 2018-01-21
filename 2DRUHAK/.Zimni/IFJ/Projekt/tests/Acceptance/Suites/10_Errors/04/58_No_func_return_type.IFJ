@@ -1,0 +1,7 @@
+' Missing return data type
+
+function foo()
+end function
+
+scope
+end scope

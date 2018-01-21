@@ -1,0 +1,6 @@
+' Wrong if termination
+
+scope
+    if 1 < 2 then
+    end uf
+end scope

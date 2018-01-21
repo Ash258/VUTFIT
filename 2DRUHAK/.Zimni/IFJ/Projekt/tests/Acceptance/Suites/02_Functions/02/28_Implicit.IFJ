@@ -1,0 +1,10 @@
+' Test implicit string value
+
+function foo() as string
+end function
+
+scope
+    dim a as string
+    a = foo()
+    print a;
+end scope

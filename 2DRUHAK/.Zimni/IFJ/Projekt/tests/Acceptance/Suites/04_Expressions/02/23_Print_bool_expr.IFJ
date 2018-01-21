@@ -1,0 +1,4 @@
+
+scope
+    print 2 > 2.3;
+end scope

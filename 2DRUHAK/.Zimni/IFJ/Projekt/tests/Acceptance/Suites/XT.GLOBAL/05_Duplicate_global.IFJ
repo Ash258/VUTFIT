@@ -1,0 +1,7 @@
+' Duplicated global variable name
+
+dim shared c as integer
+dim shared c as integer
+
+scope
+end scope

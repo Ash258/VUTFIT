@@ -1,0 +1,5 @@
+'Lexical error in print
+
+scope
+    print &
+end scope

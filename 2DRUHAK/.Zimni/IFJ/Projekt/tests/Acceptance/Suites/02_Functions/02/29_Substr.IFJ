@@ -1,0 +1,45 @@
+scope
+
+dim cosi as String = !"COSI"
+
+' Substr empty string with whatever i and n (CASE 1)
+
+dim a as string = substr(!"", 1, 1)
+print length(a);
+print !"\n";
+
+' Substr string with i <= 0 and whatever n (CASE 2)
+
+dim b as string = substr(cosi, 0, 1)
+dim c as string = substr(cosi, -5, 1)
+print length(b); length(c);
+print !"\n";
+
+' Substr string with i > length(string) (CASE 3)
+
+dim d as string = substr(cosi, 5, 1)
+print length(d);
+print !"\n";
+
+' Substr string with specific i and n <= 0 (CASE 4)
+
+dim e as string = substr(cosi, 2, 0)
+dim f as string = substr(cosi, 2, -5)
+print e; !" "; f;
+print !"\n";
+
+' Substr string with specific i and n > length(string)-i (CASE 5)
+' 2 > 4-3
+' 5 > 4-1
+
+dim g as string = substr(cosi, 3, 2)
+dim h as string = substr(cosi, 1, 5)
+print g; !" "; h;
+print !"\n";
+
+' Substr string with correct i and n (CASE 6)
+
+dim i as string = substr(cosi, 1, 2)
+print i;
+
+end scope

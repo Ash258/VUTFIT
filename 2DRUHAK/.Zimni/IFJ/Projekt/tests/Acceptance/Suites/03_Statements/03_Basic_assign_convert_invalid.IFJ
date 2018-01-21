@@ -1,0 +1,6 @@
+' Basic constant assignment with invalid types I
+
+scope
+    dim b as integer
+    b = !"foo"
+end scope

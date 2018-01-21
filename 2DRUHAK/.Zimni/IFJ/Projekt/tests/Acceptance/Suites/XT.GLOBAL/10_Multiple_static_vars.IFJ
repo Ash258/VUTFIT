@@ -1,0 +1,31 @@
+' Multiple static variables
+
+function counter(a as integer) as integer
+	static c as integer = 25
+	c = c + 1
+	return c
+end function
+
+function multiplier(a as integer) as integer
+	static c as integer = 2
+	c = c * 2
+	return c
+end function
+
+scope
+	dim res as integer
+	res = counter(25)
+	print res;
+	res = counter(0)
+	print res;
+	res = multiplier(2)
+	print res;
+	res = multiplier(0)
+	print res;
+	res = counter(0)
+	print res;
+	res = counter(0)
+	print res;
+	res = multiplier(0)
+	print res;
+end scope

@@ -1,0 +1,8 @@
+' String concat
+
+scope
+    dim a as string = !"master "
+    dim b as string = !" puppets!"
+
+    print a; !"of"; b;
+end scope

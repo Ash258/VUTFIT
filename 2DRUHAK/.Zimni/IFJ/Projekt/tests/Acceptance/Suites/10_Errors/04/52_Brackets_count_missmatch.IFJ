@@ -1,0 +1,5 @@
+' Unterminated braces group
+
+scope
+    print ((2 + 3);
+end scope

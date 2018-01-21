@@ -1,0 +1,5 @@
+' Wrong double format
+
+scope
+    dim d as double = 33455457e
+end scope

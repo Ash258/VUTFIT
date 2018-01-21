@@ -1,0 +1,6 @@
+' Undefined variable in while
+
+scope
+    do while a < 10 then
+    loop
+end scope

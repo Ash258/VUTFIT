@@ -1,0 +1,5 @@
+' Missing operand in braces group
+
+scope
+    print (* 6) + (5 + 9);
+end scope

@@ -1,0 +1,8 @@
+' Function arguments without type
+
+function foo(a, b as integer) as integer
+end function
+
+scope
+    loop
+end scope

@@ -1,0 +1,5 @@
+' Keyword in expression
+
+scope
+    print (print + 9);
+end scope

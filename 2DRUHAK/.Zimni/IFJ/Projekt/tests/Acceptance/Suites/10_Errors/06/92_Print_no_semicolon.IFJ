@@ -1,0 +1,5 @@
+'Lexical error in assignment
+
+scope
+    dim a as integer = &
+end scope

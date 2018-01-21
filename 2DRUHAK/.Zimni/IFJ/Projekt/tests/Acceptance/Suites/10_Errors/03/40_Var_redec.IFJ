@@ -1,0 +1,6 @@
+' Variable redeclaration
+
+scope
+    dim a as integer
+    dim a as integer
+end scope

@@ -1,0 +1,4 @@
+scope
+    dim a as integer = -42
+    print -a;
+end scope

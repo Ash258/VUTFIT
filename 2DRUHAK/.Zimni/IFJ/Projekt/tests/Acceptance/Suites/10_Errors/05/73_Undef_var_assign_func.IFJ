@@ -1,0 +1,9 @@
+' Undefined variable assignment in function
+
+function foo() as integer
+    dim a as integer
+    ab = 10
+end function
+
+scope
+end scope

@@ -1,0 +1,15 @@
+' Condition return
+
+function get_integer(a as integer) as integer
+	if a < 2 then
+		return 58
+	else
+	    return a
+	end if
+end function
+
+scope
+	dim b as string
+	b = get_integer(25)
+	print b;
+end scope

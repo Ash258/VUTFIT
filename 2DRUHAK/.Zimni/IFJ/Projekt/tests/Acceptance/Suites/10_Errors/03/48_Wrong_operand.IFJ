@@ -1,0 +1,5 @@
+' Wrong operand for two strings
+
+scope
+    print !"foo" * !"foo";
+end scope

@@ -1,0 +1,9 @@
+' Block comments
+
+scope
+	/' this is comment '/
+	dim b as string '
+	dim a as string ' testing comment
+	' whaat
+	/' test ' '/
+end scope

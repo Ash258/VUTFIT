@@ -1,0 +1,5 @@
+' Undefined variable in expression
+
+scope
+    print a*2;
+end scope

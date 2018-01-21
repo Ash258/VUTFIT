@@ -1,0 +1,10 @@
+' Declaration and definition of function aren't the same
+
+declare function fooqwead() as integer
+
+function fooqwead() as string
+end function
+
+
+scope
+end scope

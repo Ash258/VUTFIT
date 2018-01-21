@@ -1,0 +1,9 @@
+' Function in function
+
+function foo() as integer
+    function bar() as integer
+    end function
+end function
+
+scope
+end scope

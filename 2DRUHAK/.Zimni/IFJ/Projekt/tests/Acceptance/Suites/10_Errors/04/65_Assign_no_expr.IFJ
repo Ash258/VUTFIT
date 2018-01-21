@@ -1,0 +1,6 @@
+' Assignment without expr
+
+scope
+    dim a as integer
+    a =
+end scope

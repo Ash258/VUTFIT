@@ -1,0 +1,8 @@
+' False brackets in expression
+
+function foo() as integer
+end function
+
+scope
+    dim a as integer = foo(
+end scope

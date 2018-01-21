@@ -1,0 +1,5 @@
+' Missing content of braces group
+
+scope
+    print () + (5 + 9);
+end scope

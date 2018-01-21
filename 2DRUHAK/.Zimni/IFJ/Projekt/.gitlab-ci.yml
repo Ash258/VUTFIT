@@ -1,0 +1,26 @@
+image: ash258/fbc:latest
+
+stages:
+    - build
+    - test
+
+build:
+    stage: build
+    script:
+        - make -s
+
+unit_tests:
+    stage: test
+    script: make -s unit
+
+acceptance_tests:
+    stage: test
+    script: make -s accept
+
+validate_zip:
+    stage: test
+    script: make -s testZip
+
+submit:
+    stage: test
+    script: make -s runFromZip

@@ -1,0 +1,7 @@
+' Test IFJcode build-in function
+
+scope
+    dim c as string
+    c = chr(97)
+    print c;
+end scope

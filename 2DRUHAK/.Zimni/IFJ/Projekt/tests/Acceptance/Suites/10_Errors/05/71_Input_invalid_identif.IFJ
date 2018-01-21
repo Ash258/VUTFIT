@@ -1,0 +1,6 @@
+' Input with invalid identifier
+
+scope
+    dim a as integer
+    input ab
+end scope

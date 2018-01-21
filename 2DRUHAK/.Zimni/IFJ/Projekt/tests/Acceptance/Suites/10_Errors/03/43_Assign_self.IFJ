@@ -1,0 +1,5 @@
+' Assignment or undefined variable in same variable declaration
+
+scope
+    dim a as integer = a + 1
+end scope

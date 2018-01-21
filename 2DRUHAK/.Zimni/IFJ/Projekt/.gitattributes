@@ -1,0 +1,3 @@
+# Stop warning sign for CRLF at commit
+*.vpp     binary
+*.sh      text eol=lf

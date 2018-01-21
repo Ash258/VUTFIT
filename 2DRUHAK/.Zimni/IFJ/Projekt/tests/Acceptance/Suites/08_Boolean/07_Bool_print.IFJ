@@ -1,0 +1,6 @@
+' Print boolean
+
+scope
+    dim a as boolean = true
+    print a;
+end scope

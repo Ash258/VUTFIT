@@ -1,0 +1,5 @@
+' Undefined variable assignment
+
+scope
+    a = 31
+end scope

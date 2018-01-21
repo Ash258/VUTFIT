@@ -1,0 +1,9 @@
+version: '3.3'
+
+services:
+    code:
+        image: ash258/fbc
+        container_name: IFJ2017
+        working_dir: /code
+        volumes:
+            - .:/code

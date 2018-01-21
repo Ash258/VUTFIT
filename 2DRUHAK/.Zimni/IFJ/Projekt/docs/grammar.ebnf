@@ -1,0 +1,152 @@
+# --------------
+# context free grammar
+# --------------
+
+program = { variable | function } program_body;
+
+program_body = 'Scope' eol
+                { statement }
+                'End Scope'; //TODO - find out if program can ends with eol
+
+
+# -----------------
+# Function relative
+# -----------------
+
+function = function_declaration | function_definition;
+function_declaration =
+    'Declare Function' identificator '(' parameters ')' 'As' data_type eol;
+function_definition =
+    'Function' identificator '(' parameters, ')' 'As' data_type eol
+    { statement }
+    'End Function' eol
+;
+
+parameters = [ parameter { ',' parameter } ];
+parameter = identificator 'As' data_type;
+
+arguments = [ expression { ',' expression } ];
+
+
+# -----------------
+# Variable relative
+# -----------------
+
+variable = 'Dim' identificator 'As' data_type [ assignment_operator expression ] eol;
+
+
+# ------------------------
+# Expression and Statement
+# ------------------------
+
+statement = {
+    variable |
+    input_statement |
+    print_statement |
+    return_statement |
+    if_statement |
+    loop_statement
+};
+
+assignment_statement = identificator assignment_operator expression eol;
+input_statement = 'Input' identificator eol;
+print_statement = 'Print' { expression ';' } eol;
+return_statement = 'Return' expression eol;
+
+if_statement =
+    'If', expression, 'Then', eol,
+    { statement },
+    {
+        'Elseif', expression, 'Then', eol,
+        { statement }
+    }
+    [
+        'Else', eol,
+        { statement }
+    ],
+    'End If' eol
+;
+
+loop_statement =
+    'Do While', expression, eol,
+    statement,
+    'Loop', eol
+;
+
+expression = additive_expression [ relational_operator additive_expression ];
+additive_expression = decimal_division_expression [ addition_operator decimal_division_expression ];
+decimal_division_expression = multiplication_expression [ decimal_division_operator multiplication_expression ];
+multiplication_expression = atomic_expression [ multiplication_operator atomic_expression ];
+
+atomic_expression =
+    '(' expression ')' |
+    identifier '(' arguments ')',
+    term
+;
+
+
+# --------------
+# lexical grammar
+# --------------
+
+term = integer | double | string | identificator;
+data_type = 'Integer' | 'Double' | 'String'; # TODO: Add boolean
+comment = "'" { comment_character } eol | "/'"  { comment_character } "'/";
+
+integer =
+    decimal_digit { decimal_digit } |
+    '&' (
+        'B' 32 * binary_digit |
+        'O' 12 * octal_digit |
+        'H' 8 * hex_digit
+    )
+;
+double = integer '.' integer | integer ( 'e' | 'E' ) [ addition_operator ] integer;
+string = '!"' { string_character | escaped_character } '"';
+identificator = ( alphabet_character | '_' ) { decimal_digit | alphabet_character | '_' };
+
+# -------
+# Helpers
+# -------
+
+binary_operator = '||' | '&&';
+relational_operator = '<>' | '<' | '<=' | '>' | '>=';
+arithmetic_operator = arithmetic_addition_operator | arithmetic_factor_operator;
+multiplication_operator = '*' | '/';
+decimal_division_operator = '\'';
+addition_operator = '+' | '-';
+assignment_operator = [ arithmetic_operator ] '=';
+
+alphabet_character = ? any character without diacritics upper or lower ?;
+string_character = ? any ascii character bigger than 31 except 34 ?;
+comment_character = ? any utf8 character except 35 ?;
+eol = ? end of line character(s) ?;
+escaped_character = '\' (
+    'a' | 'b' | 'f' | 'l' | 'n' | 'r' | 't' | 'v' |
+    3 * decimal_digit |
+    'u', 4 * hex_digit |
+    '&' (
+        'h' 2 * hex_digit |
+        'o' 3 * octal_digit |
+        'b' 8 * binary_digit
+    )
+    '\' |
+    '"' |
+    "'"
+);
+
+Digit_binary = ? 0 or 1 ?;
+Digit_octal = ? any of 0..7 digits ?;
+Digit_decimal = ? any of 0..9 digits ?;
+Digit_hexadecimal = ? any of 0..9 digits or any of A..F characters ?;
+
+keywords = used_keywords | reserved_keywords;
+used_keywordS =
+    'As' |'Asc' |'Declare' |'Dim' |'Do' |'Double' |'Else' |'End' |
+    'Chr' |'Function' |'If' |'Input' |'Integer' |'Length' |'Loop' |
+    'Print' |'Return' |'Scope' |'String' |'SubStr' |'Then' |'While'
+;
+reserved_keywords =
+    'And' | 'Boolean' | 'Continue' | 'Elseif' | 'Exit' |
+    'False' | 'For' | 'Next' | 'Not' | 'Or' | 'Shared' | 'Static' | 'True'
+;

@@ -1,0 +1,26 @@
+ziptest/
+tmp/
+*.log
+xparma02.zip
+cmake-build-debug/
+*.o
+All_units
+debug
+IFJ2017
+GenerateFile.code
+
+# Every line is for some reason needed!!
+.idea/**/*
+.vscode/
+# Backward compatibillity
+!.idea/codeStyleSettings.xml
+!.idea/file.template.settings.xml
+!.idea/codeStyles
+!.idea/codeStyles/codeStyleConfig.xml
+!.idea/codeStyles/Project.xml
+!.idea/vcs.xml
+!.idea/fileTemplates
+!.idea/fileTemplates/includes
+# Visual Paradigm
+*.vpp.bak_*
+*.vpp.lck

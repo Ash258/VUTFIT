@@ -1,0 +1,9 @@
+' Comment inside string
+
+scope
+	dim a as string
+
+	a = !"/'komentar'/ 'komentar"
+
+	print a;
+end scope

@@ -1,0 +1,7 @@
+' Length of complex escaped string
+
+scope
+    dim a as integer
+    a = Length(!"b\069\0423\054e\210l\190\255")
+    print a;
+end scope

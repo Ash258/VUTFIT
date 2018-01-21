@@ -1,0 +1,6 @@
+' Empty expression in condition
+
+scope
+    if then
+    end if
+end scope

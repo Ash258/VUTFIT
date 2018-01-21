@@ -1,0 +1,15 @@
+' Length of escaped strings
+
+scope
+    dim a as integer = Length(!"\069\042\054")
+    print a;
+
+    dim b as integer = Length(!"\069\042\054")
+    print b;
+
+    dim c as integer = Length(!"\210\190\255")
+    print c;
+
+    dim d as integer = Length(!"x\nz")
+print d;
+end scope

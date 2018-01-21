@@ -1,0 +1,8 @@
+' Declaration in function
+
+function foo() as integer
+    declare function bar() as integer
+end function
+
+scope
+end scope

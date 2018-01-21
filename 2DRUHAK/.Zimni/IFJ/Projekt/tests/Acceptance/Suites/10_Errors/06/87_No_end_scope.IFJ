@@ -1,0 +1,3 @@
+scope
+    dim a as integer
+    print a;

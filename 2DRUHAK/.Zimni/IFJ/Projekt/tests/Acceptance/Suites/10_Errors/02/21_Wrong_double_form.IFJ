@@ -1,0 +1,5 @@
+' Wrong double format
+
+scope
+    dim c as double = 33455457.e---
+end scope

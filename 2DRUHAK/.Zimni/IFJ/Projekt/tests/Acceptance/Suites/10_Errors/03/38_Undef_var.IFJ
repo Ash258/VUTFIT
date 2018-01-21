@@ -1,0 +1,5 @@
+' Undefined variable
+
+scope
+    input a
+end scope

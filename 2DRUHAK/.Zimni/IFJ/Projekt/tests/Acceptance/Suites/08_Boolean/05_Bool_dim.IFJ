@@ -1,0 +1,10 @@
+' Define boolean
+
+scope
+    dim a as boolean = true
+
+    if a then
+        print 42;
+    else
+    end if
+end scope

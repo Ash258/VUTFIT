@@ -1,0 +1,17 @@
+' Global variable initialization by function call
+
+declare function foo() as integer
+
+function bar() as integer
+	return 25
+end function
+
+dim shared b as integer = foo()
+
+function foo() as integer
+	return bar()
+end function
+
+scope
+	print b;
+end scope

@@ -1,0 +1,9 @@
+' Return expression
+
+function foo() as integer
+    return
+end function
+
+scope
+    loop
+end scope

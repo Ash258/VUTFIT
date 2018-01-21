@@ -1,0 +1,6 @@
+' Assignment or undefined variable
+
+scope
+    dim a as integer
+    a = 10 + variable
+end scope

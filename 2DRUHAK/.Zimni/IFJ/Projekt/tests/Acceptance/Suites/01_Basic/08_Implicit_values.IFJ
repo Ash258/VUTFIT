@@ -1,0 +1,9 @@
+' Variable declaration with implicit value
+
+scope
+	dim int as integer
+	dim float as double
+	dim str as string
+
+	print int; float; str;
+end scope

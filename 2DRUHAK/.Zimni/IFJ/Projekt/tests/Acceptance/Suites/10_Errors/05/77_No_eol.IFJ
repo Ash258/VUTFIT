@@ -1,0 +1,5 @@
+' No eol after statement
+
+scope
+    dim a as integer dim b as integer
+end scope

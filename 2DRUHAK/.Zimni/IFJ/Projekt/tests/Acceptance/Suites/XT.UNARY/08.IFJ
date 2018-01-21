@@ -1,0 +1,3 @@
+scope
+    print --(3 * 12);
+end scope

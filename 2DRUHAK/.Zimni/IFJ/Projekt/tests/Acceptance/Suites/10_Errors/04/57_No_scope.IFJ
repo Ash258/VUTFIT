@@ -1,0 +1,4 @@
+' Expected scope
+
+dim a as integer
+end scope

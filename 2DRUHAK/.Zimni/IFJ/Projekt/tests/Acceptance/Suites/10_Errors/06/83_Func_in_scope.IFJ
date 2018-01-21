@@ -1,0 +1,6 @@
+' Function in scope
+
+scope
+    function foo() as integer
+    end function
+end scope

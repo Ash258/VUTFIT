@@ -1,0 +1,9 @@
+' Undefined variable in calling function
+
+function foo(a as integer) as integer
+end function
+
+scope
+    dim a as integer
+    a = foo(b)
+end scope

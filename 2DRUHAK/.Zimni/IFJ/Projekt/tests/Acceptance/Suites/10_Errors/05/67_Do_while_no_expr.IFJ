@@ -1,0 +1,6 @@
+' Do while without expression
+
+scope
+    do while
+    loop
+end scope

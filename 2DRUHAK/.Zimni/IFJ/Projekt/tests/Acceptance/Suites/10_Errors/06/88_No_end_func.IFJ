@@ -1,0 +1,6 @@
+' No end function
+
+function foo() as integer
+
+scope
+end scope

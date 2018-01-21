@@ -1,0 +1,11 @@
+' Simple call function
+
+function foo() as integer
+	return 42
+end function
+
+scope
+	dim a as integer
+	a = FOO()
+	print a;
+end scope

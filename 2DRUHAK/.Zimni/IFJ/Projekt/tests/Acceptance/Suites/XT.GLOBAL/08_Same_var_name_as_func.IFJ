@@ -1,0 +1,12 @@
+' Global variable with same name as function
+
+declare function foo() as integer
+
+dim shared foo as integer
+
+function foo() as integer
+	return 45
+end function
+
+scope
+end scope

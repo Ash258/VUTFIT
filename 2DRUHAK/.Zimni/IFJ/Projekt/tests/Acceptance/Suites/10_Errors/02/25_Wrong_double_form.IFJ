@@ -1,0 +1,5 @@
+' Wrong double format
+
+scope
+    dim a as integer = 12.21.74
+end scope

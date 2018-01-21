@@ -1,0 +1,8 @@
+' Global variable initialized from other global variable
+
+dim shared b as integer = 38
+dim shared c as integer = b * 2
+
+scope
+	print b; c;
+end scope

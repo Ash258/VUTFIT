@@ -1,0 +1,10 @@
+' Divide integer and doubles
+
+scope
+    dim a as integer = 9
+    dim b as integer = 2
+    dim c as double = 8
+    dim d as double = 2
+
+    print c / d; !"\n"; a \ b;
+end scope

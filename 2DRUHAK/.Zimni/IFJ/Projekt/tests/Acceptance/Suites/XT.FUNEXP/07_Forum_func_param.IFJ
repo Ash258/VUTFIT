@@ -1,0 +1,18 @@
+' Function parameter next function.
+
+function foo(par1 as string, par2 as double) as integer
+   Print par1; par2;
+   return 5
+end function
+
+function func(par1 as double) as double
+   Print par1;
+end function
+
+function bar(par1 as string) as string
+   Print par1;
+end function
+
+scope
+   dim prom as integer = foo(bar(!"str"), func(15))
+end scope

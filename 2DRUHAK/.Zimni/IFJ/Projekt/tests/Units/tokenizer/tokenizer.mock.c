@@ -1,0 +1,5 @@
+#include "../../../src/tokenizer/tokenizer.external.h"
+#include "buffer.mock.c"
+#include "utils.mock.c"
+#include "../../../src/tokenizer/token.external.c"
+#include "../../../src/tokenizer/tokenizer.digit.c"

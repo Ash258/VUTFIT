@@ -1,0 +1,5 @@
+' Print double expression
+
+scope
+    print 3/2.0;
+end scope

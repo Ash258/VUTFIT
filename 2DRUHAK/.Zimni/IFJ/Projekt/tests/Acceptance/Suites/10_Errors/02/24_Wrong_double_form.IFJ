@@ -1,0 +1,5 @@
+' Wrong double format
+
+scope
+    dim d as double = .e74
+end scope

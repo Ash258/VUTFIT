@@ -1,0 +1,5 @@
+' Wrong string escape sequence
+
+scope
+    dim a as string = !"\1"
+end scope

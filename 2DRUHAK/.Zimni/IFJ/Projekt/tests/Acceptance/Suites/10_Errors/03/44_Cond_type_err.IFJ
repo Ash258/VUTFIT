@@ -1,0 +1,6 @@
+' Condition type error with string value
+
+scope
+    if !"" then
+    end if
+end scope

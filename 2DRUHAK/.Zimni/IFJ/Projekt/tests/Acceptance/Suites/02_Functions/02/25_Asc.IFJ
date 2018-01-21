@@ -1,0 +1,7 @@
+' Test IFJcode build-in function
+
+scope
+    dim a as integer
+    a = asc(!"ahoj", 2)
+    print a;
+end scope

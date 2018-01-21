@@ -1,0 +1,7 @@
+' No then after if
+
+scope
+    dim a as integer
+    if a > 10
+    end if
+end scope

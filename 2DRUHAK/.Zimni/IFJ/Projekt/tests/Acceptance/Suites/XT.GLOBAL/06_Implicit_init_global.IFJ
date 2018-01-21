@@ -1,0 +1,25 @@
+' Global variable implicit init
+
+dim shared a as integer
+dim shared b as double
+dim shared c as string
+
+scope
+	if a <> 0 then
+		print 0;
+	else
+		print 1;
+	end if
+
+	if b <> 0 then
+		print 0;
+	else
+		print 1;
+	end if
+
+	if c <> !"" then
+		print 0;
+	else
+		print 1;
+	end if
+end scope

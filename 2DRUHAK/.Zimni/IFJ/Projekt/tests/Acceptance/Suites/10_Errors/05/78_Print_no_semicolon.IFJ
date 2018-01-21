@@ -1,0 +1,5 @@
+' Print without semicolon
+
+scope
+    print 42; 42
+end scope

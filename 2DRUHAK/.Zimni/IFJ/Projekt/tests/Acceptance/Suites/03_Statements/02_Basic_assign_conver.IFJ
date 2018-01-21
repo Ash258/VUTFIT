@@ -1,0 +1,12 @@
+' Basic constant assignment with implicit conversions
+
+scope
+	dim b as integer
+	b = 42.78
+	b = 78e3
+
+	dim c as double
+	c  = 74
+
+	print b; c;
+end scope

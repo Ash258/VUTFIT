@@ -1,0 +1,11 @@
+' Compare boolean
+
+scope
+    dim a as boolean = false
+
+    if a = false then
+        print a;
+    else
+    end if
+    print a;
+end scope

@@ -1,0 +1,7 @@
+' Empty condition
+
+scope
+    if 10 < 15 then
+    else
+    end if
+end scope

@@ -1,0 +1,5 @@
+' Declaration in scope
+
+scope
+declare function foo() as integer
+end scope

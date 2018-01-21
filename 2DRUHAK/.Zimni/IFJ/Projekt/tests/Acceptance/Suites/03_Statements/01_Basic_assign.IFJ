@@ -1,0 +1,14 @@
+' Basic constant assignment
+
+scope
+	dim a as string
+	a =    !"fooman"
+
+	dim b as integer
+	b =  42
+
+	dim c as double
+	c  =  74.85
+
+	print a; b; c;
+end scope
