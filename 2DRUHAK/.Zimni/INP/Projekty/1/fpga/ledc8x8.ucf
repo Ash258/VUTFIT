@@ -1,0 +1,31 @@
+# SMCLK je hlavni hodinovy vstup, zde pro nej specifikujeme kmitocet,
+# ktery na FITkitu ma hodnotu 7.3728 MHz...
+NET SMCLK TNM_NET = smclk_pin;
+TIMESPEC TS_smclk_pin = PERIOD smclk_pin 7.3728 MHz;
+
+# ...a samozrejme mu i priradime pin na FPGA podle schematu k FITkitu.
+NET SMCLK      LOC = P80;
+
+# Logický pochod ala Ash258 :D
+# ROW<0> == P204 (Ze základního souboru)
+# 		P204 == X14
+# 		X14 == 21
+# 		21 == r0 z Obr. 1 == orientace je jasná
+# doplnte mapovani pinu pro ostatni signaly entity
+NET RESET      LOC = P155;
+NET ROW<0>     LOC = P204; # 21 - X14 - 204
+NET ROW<1>     LOC = P2;   # 23 - X16 - 2
+NET ROW<2>     LOC = P7;   # 25 - X18 - 7
+NET ROW<3>     LOC = P10;  # 27 - X20 - 10
+NET ROW<4>     LOC = P12;  # 29 - X22 - 12
+NET ROW<5>     LOC = P15;  # 31 - X24 - 15
+NET ROW<6>     LOC = P18;  # 33 - X26 - 18
+NET ROW<7>     LOC = P20;  # 35 - X28 - 20
+NET LED<0>     LOC = P26;  # 37 - X30 - 26
+NET LED<1>     LOC = P28;  # 39 - X32 - 28
+NET LED<2>     LOC = P34;  # 41 - X34 - 34
+NET LED<3>     LOC = P36;  # 43 - X36 - 36
+NET LED<4>     LOC = P39;  # 45 - X38 - 39
+NET LED<5>     LOC = P42;  # 47 - X40 - 42
+NET LED<6>     LOC = P44;  # 49 - X42 - 44
+NET LED<7>     LOC = P46;  # 51 - X44 - 46

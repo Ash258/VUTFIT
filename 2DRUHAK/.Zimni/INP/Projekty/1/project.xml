@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+    <!--  Project description -->
+    <name>Rizeni maticoveho displeje z FPGA</name>
+    <author>Michal Bidlo</author>
+    <authoremail>bidlom@fit.vutbr.cz</authoremail>
+    <description>Rizeni displeje LED 8x8 z FPGA pres Xbus</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga toplevelentity="ledc8x8" ucffile="fpga/ledc8x8.ucf" architecture="none">
+        <file>ledc8x8.vhd</file>
+    </fpga>
+
+</project>

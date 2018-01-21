@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="inp">
+
+    <!--  Project description -->
+    <name>INP 2017 - projekt 2</name>
+    <revision>20171021</revision>
+    <description>8-bitovy procesor (Brainlove interpreter)</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga>
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+
+        <file>lcdctrl.vhd</file>
+        <file>kbctrl.vhd</file>
+        <file>ram.vhd</file>
+        <file>rom.vhd</file>
+        <file>cpu.vhd</file>
+        <file>top.vhd</file>
+
+        <!-- soubory pro simulaci -->
+        <file context="sim">fpga/sim/tb.vhd</file>
+        <file context="sim">fpga/models/keyboard/keyboard.vhd</file>
+        <file context="sim">fpga/models/lcd/lcd.vhd</file>
+    </fpga>
+
+</project>
