@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+    code:
+        image: ash258/gcc
+        working_dir: /code2
+        container_name: CosiIAL
+        command: tail -f /dev/null
+        volumes:
+          - ./1:/code1
+          - ./2:/code2

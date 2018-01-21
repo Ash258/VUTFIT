@@ -1,0 +1,3 @@
+SET(C402 C402.c C402-test.c)
+
+ADD_EXECUTABLE(c402 ${C402})

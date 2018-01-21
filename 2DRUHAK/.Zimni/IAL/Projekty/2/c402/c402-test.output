@@ -1,0 +1,426 @@
+Nerekurzivni operace nad binarnim stromem
+=========================================
+[TEST01]
+Test inicializace....
+Struktura binarniho stromu:
+
+strom je prazdny
+
+=================================================
+[TEST02]
+Zkusime zrusit strom
+~~~~~~~~~~~~~~~~~~~~
+Struktura binarniho stromu:
+
+strom je prazdny
+
+=================================================
+[TEST03]
+Provedeme pruchod Pre-order, In-order a Post-order na prazdny strom
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vypis Preorder:
+===============
+
+Vypis Postorder:
+================
+
+Vypis Inorder:
+==============
+
+[TEST04]
+Vlozime prvek s hodnotou 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Struktura binarniho stromu:
+
+  +-[8]
+
+=================================================
+[TEST05]
+Provedeme pruchod Pre-order, In-order a Post-order na prazdny strom
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vypis Preorder:
+===============
+Výpis hodnoty daného uzlu> 8
+
+Vypis Postorder:
+================
+Výpis hodnoty daného uzlu> 8
+
+Vypis Inorder:
+==============
+Výpis hodnoty daného uzlu> 8
+
+[TEST06]
+Zkusime zrusit strom
+~~~~~~~~~~~~~~~~~~~~
+Struktura binarniho stromu:
+
+strom je prazdny
+
+=================================================
+[TEST07]
+Vlozime prvek s hodnotou 8
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Struktura binarniho stromu:
+
+  +-[8]
+
+=================================================
+[TEST08]
+Vlozeni dalsich prvku
+~~~~~~~~~~~~~~~~~~~~~
+Vlozime prvek 4
+Vlozime prvek 12
+Struktura binarniho stromu:
+
+     +-[12]
+     |
+  +-[8]
+     |
+     +-[4]
+
+=================================================
+[TEST09]
+Provedeme pruchod Pre-order, In-order a Post-order na prazdny strom
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vypis Preorder:
+===============
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 12
+
+Vypis Postorder:
+================
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 8
+
+Vypis Inorder:
+==============
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 12
+
+[TEST10]
+Pokus o opetovne vlozeni prvku 8 (nesmi dojit ke zmene stromu) 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Struktura binarniho stromu:
+
+     +-[12]
+     |
+  +-[8]
+     |
+     +-[4]
+
+=================================================
+[TEST11]
+Pokus o opetovne vlozeni prvku 12 (nesmi dojit ke zmene stromu) 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Struktura binarniho stromu:
+
+     +-[12]
+     |
+  +-[8]
+     |
+     +-[4]
+
+=================================================
+[TEST12]
+Provedeme pruchod Pre-order, In-order a Post-order 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Vypis Preorder:
+===============
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 12
+
+Vypis Inorder:
+==============
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 12
+
+Vypis Postorder:
+================
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 8
+
+[TEST13]
+Vlozeni dalsich prvku ve vhodnem poradi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vlozime prvek 2
+Vlozime prvek 6
+Vlozime prvek 10
+Vlozime prvek 14
+Vlozime prvek 1
+Vlozime prvek 3
+Vlozime prvek 5
+Vlozime prvek 7
+Vlozime prvek 9
+Vlozime prvek 11
+Vlozime prvek 13
+Vlozime prvek 15
+Struktura binarniho stromu:
+
+           +-[15]
+           |
+        +-[14]
+        |  |
+        |  +-[13]
+        |
+     +-[12]
+     |  |
+     |  |  +-[11]
+     |  |  |
+     |  +-[10]
+     |     |
+     |     +-[9]
+     |
+  +-[8]
+     |
+     |     +-[7]
+     |     |
+     |  +-[6]
+     |  |  |
+     |  |  +-[5]
+     |  |
+     +-[4]
+        |
+        |  +-[3]
+        |  |
+        +-[2]
+           |
+           +-[1]
+
+=================================================
+[TEST14]
+Provedeme pruchod Pre-order, In-order a Post-order 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Vypis Preorder:
+===============
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 2
+Výpis hodnoty daného uzlu> 1
+Výpis hodnoty daného uzlu> 3
+Výpis hodnoty daného uzlu> 6
+Výpis hodnoty daného uzlu> 5
+Výpis hodnoty daného uzlu> 7
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 10
+Výpis hodnoty daného uzlu> 9
+Výpis hodnoty daného uzlu> 11
+Výpis hodnoty daného uzlu> 14
+Výpis hodnoty daného uzlu> 13
+Výpis hodnoty daného uzlu> 15
+
+Vypis Inorder:
+==============
+Výpis hodnoty daného uzlu> 1
+Výpis hodnoty daného uzlu> 2
+Výpis hodnoty daného uzlu> 3
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 5
+Výpis hodnoty daného uzlu> 6
+Výpis hodnoty daného uzlu> 7
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 9
+Výpis hodnoty daného uzlu> 10
+Výpis hodnoty daného uzlu> 11
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 13
+Výpis hodnoty daného uzlu> 14
+Výpis hodnoty daného uzlu> 15
+
+Vypis Postorder:
+================
+Výpis hodnoty daného uzlu> 1
+Výpis hodnoty daného uzlu> 3
+Výpis hodnoty daného uzlu> 2
+Výpis hodnoty daného uzlu> 5
+Výpis hodnoty daného uzlu> 7
+Výpis hodnoty daného uzlu> 6
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 9
+Výpis hodnoty daného uzlu> 11
+Výpis hodnoty daného uzlu> 10
+Výpis hodnoty daného uzlu> 13
+Výpis hodnoty daného uzlu> 15
+Výpis hodnoty daného uzlu> 14
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 8
+
+[TEST15]
+Zrusime cely strom
+~~~~~~~~~~~~~~~~~~
+Struktura binarniho stromu:
+
+strom je prazdny
+
+=================================================
+[TEST16]
+Provedeme pruchod Pre-order, In-order a Post-order 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Vypis Preorder:
+===============
+
+Vypis Inorder:
+==============
+
+Vypis Postorder:
+================
+
+[TEST17]
+Nyni si vytvorime jiny strom.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Vlozime prvek 10
+Vlozime prvek 8
+Vlozime prvek 12
+Vlozime prvek 14
+Vlozime prvek 1
+Vlozime prvek 2
+Vlozime prvek 3
+Vlozime prvek 4
+Vlozime prvek 5
+Vlozime prvek 6
+Vlozime prvek 13
+Vlozime prvek 15
+Vlozime prvek 7
+Vlozime prvek 9
+Vlozime prvek 11
+Struktura binarniho stromu:
+
+           +-[15]
+           |
+        +-[14]
+        |  |
+        |  +-[13]
+        |
+     +-[12]
+     |  |
+     |  +-[11]
+     |
+  +-[10]
+     |
+     |  +-[9]
+     |  |
+     +-[8]
+        |
+        |                 +-[7]
+        |                 |
+        |              +-[6]
+        |              |
+        |           +-[5]
+        |           |
+        |        +-[4]
+        |        |
+        |     +-[3]
+        |     |
+        |  +-[2]
+        |  |
+        +-[1]
+
+=================================================
+[TEST18]
+Provedeme pruchod Pre-order, In-order a Post-order 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Vypis Preorder:
+===============
+Výpis hodnoty daného uzlu> 10
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 1
+Výpis hodnoty daného uzlu> 2
+Výpis hodnoty daného uzlu> 3
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 5
+Výpis hodnoty daného uzlu> 6
+Výpis hodnoty daného uzlu> 7
+Výpis hodnoty daného uzlu> 9
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 11
+Výpis hodnoty daného uzlu> 14
+Výpis hodnoty daného uzlu> 13
+Výpis hodnoty daného uzlu> 15
+
+Vypis Inorder:
+==============
+Výpis hodnoty daného uzlu> 1
+Výpis hodnoty daného uzlu> 2
+Výpis hodnoty daného uzlu> 3
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 5
+Výpis hodnoty daného uzlu> 6
+Výpis hodnoty daného uzlu> 7
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 9
+Výpis hodnoty daného uzlu> 10
+Výpis hodnoty daného uzlu> 11
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 13
+Výpis hodnoty daného uzlu> 14
+Výpis hodnoty daného uzlu> 15
+
+Vypis Postorder:
+================
+Výpis hodnoty daného uzlu> 7
+Výpis hodnoty daného uzlu> 6
+Výpis hodnoty daného uzlu> 5
+Výpis hodnoty daného uzlu> 4
+Výpis hodnoty daného uzlu> 3
+Výpis hodnoty daného uzlu> 2
+Výpis hodnoty daného uzlu> 1
+Výpis hodnoty daného uzlu> 9
+Výpis hodnoty daného uzlu> 8
+Výpis hodnoty daného uzlu> 11
+Výpis hodnoty daného uzlu> 13
+Výpis hodnoty daného uzlu> 15
+Výpis hodnoty daného uzlu> 14
+Výpis hodnoty daného uzlu> 12
+Výpis hodnoty daného uzlu> 10
+
+[TEST19]
+Pokus o opetovne vlozeni prvku 9 (nesmi dojit ke zmene stromu) 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Struktura binarniho stromu:
+
+           +-[15]
+           |
+        +-[14]
+        |  |
+        |  +-[13]
+        |
+     +-[12]
+     |  |
+     |  +-[11]
+     |
+  +-[10]
+     |
+     |  +-[9]
+     |  |
+     +-[8]
+        |
+        |                 +-[7]
+        |                 |
+        |              +-[6]
+        |              |
+        |           +-[5]
+        |           |
+        |        +-[4]
+        |        |
+        |     +-[3]
+        |     |
+        |  +-[2]
+        |  |
+        +-[1]
+
+=================================================
+[TEST20]
+Zrusime cely strom
+~~~~~~~~~~~~~~~~~~
+Struktura binarniho stromu:
+
+strom je prazdny
+
+=================================================
+------------------------------ konec -------------------------------------

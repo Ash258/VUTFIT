@@ -1,0 +1,287 @@
+Hash Table - testing script
+---------------------------
+
+Let's set HTSIZE to 19 ( must be prvocislo )
+------------HASH TABLE--------------
+0: (*UNDEF*,-1.00)
+1: (*UNDEF*,-1.00)
+2: (*UNDEF*,-1.00)
+3: (*UNDEF*,-1.00)
+4: (*UNDEF*,-1.00)
+5: (*UNDEF*,-1.00)
+6: (*UNDEF*,-1.00)
+7: (*UNDEF*,-1.00)
+8: (*UNDEF*,-1.00)
+9: (*UNDEF*,-1.00)
+10: (*UNDEF*,-1.00)
+11: (*UNDEF*,-1.00)
+12: (*UNDEF*,-1.00)
+13: (*UNDEF*,-1.00)
+14: (*UNDEF*,-1.00)
+15: (*UNDEF*,-1.00)
+16: (*UNDEF*,-1.00)
+17: (*UNDEF*,-1.00)
+18: (*UNDEF*,-1.00)
+------------------------------------
+Items count 0   The longest list 0
+------------------------------------
+
+[TEST01] Table initialization
+------------HASH TABLE--------------
+0:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+11:
+12:
+13:
+14:
+15:
+16:
+17:
+18:
+------------------------------------
+Items count 0   The longest list 0
+------------------------------------
+
+[TEST02] Let's try htInsert()
+------------HASH TABLE--------------
+0: (krusovice,21.50)
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+11:
+12:
+13:
+14:
+15:
+16:
+17:
+18:
+------------------------------------
+Items count 1   The longest list 1
+------------------------------------
+
+[TEST03] Search for existing item
+krusovice - 21.50
+
+[TEST04] Let's insert next items
+------------HASH TABLE--------------
+0: (gambrinus,18.50) (krusovice,21.50)
+1:
+2: (zlaty bazant,20.00)
+3: (plzen,25.00)
+4:
+5:
+6:
+7:
+8:
+9:
+10: (kofola,16.00)
+11: (korgon,18.00)
+12:
+13:
+14:
+15: (kelt,30.00)
+16:
+17: (velvet,28.00)
+18: (starobrno,16.50)
+------------------------------------
+Items count 9   The longest list 2
+------------------------------------
+
+[TEST05] htSearch for "starobrno"
+starobrno - 16.50
+------------HASH TABLE--------------
+0: (gambrinus,18.50) (krusovice,21.50)
+1:
+2: (zlaty bazant,20.00)
+3: (plzen,25.00)
+4:
+5:
+6:
+7:
+8:
+9:
+10: (kofola,16.00)
+11: (korgon,18.00)
+12:
+13:
+14:
+15: (kelt,30.00)
+16:
+17: (velvet,28.00)
+18: (starobrno,16.50)
+------------------------------------
+Items count 9   The longest list 2
+------------------------------------
+
+[TEST06] Let's change korgon price to 12.50
+korgon - 12.50
+------------HASH TABLE--------------
+0: (gambrinus,18.50) (krusovice,21.50)
+1:
+2: (zlaty bazant,20.00)
+3: (plzen,25.00)
+4:
+5:
+6:
+7:
+8:
+9:
+10: (kofola,16.00)
+11: (korgon,12.50)
+12:
+13:
+14:
+15: (kelt,30.00)
+16:
+17: (velvet,28.00)
+18: (starobrno,16.50)
+------------------------------------
+Items count 9   The longest list 2
+------------------------------------
+
+[TEST07] Is "starobahno" in table?
+NULL
+------------HASH TABLE--------------
+0: (gambrinus,18.50) (krusovice,21.50)
+1:
+2: (zlaty bazant,20.00)
+3: (plzen,25.00)
+4:
+5:
+6:
+7:
+8:
+9:
+10: (kofola,16.00)
+11: (korgon,12.50)
+12:
+13:
+14:
+15: (kelt,30.00)
+16:
+17: (velvet,28.00)
+18: (starobrno,16.50)
+------------------------------------
+Items count 9   The longest list 2
+------------------------------------
+
+[TEST08] How much is korgon?
+12.50
+
+[TEST09] Lets delete gambrinus and kofola
+------------HASH TABLE--------------
+0: (krusovice,21.50)
+1:
+2: (zlaty bazant,20.00)
+3: (plzen,25.00)
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+11: (korgon,12.50)
+12:
+13:
+14:
+15: (kelt,30.00)
+16:
+17: (velvet,28.00)
+18: (starobrno,16.50)
+------------------------------------
+Items count 7   The longest list 1
+------------------------------------
+
+[TEST10] Let's delete whole table
+------------HASH TABLE--------------
+0:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+11:
+12:
+13:
+14:
+15:
+16:
+17:
+18:
+------------------------------------
+Items count 0   The longest list 0
+------------------------------------
+
+[TEST11] And search for non-existing velvet
+NULL
+------------HASH TABLE--------------
+0:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+11:
+12:
+13:
+14:
+15:
+16:
+17:
+18:
+------------------------------------
+Items count 0   The longest list 0
+------------------------------------
+
+[TEST12] And insert velvet again
+------------HASH TABLE--------------
+0:
+1:
+2:
+3:
+4:
+5:
+6:
+7:
+8:
+9:
+10:
+11:
+12:
+13:
+14:
+15:
+16:
+17: (velvet,28.00)
+18:
+------------------------------------
+Items count 1   The longest list 1
+------------------------------------

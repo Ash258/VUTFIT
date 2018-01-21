@@ -1,0 +1,3 @@
+SET(C016 c016.c)
+
+ADD_EXECUTABLE(c016-test ${C016} c016-test.c)

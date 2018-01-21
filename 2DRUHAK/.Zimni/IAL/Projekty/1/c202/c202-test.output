@@ -1,0 +1,54 @@
+C202 - Stack Implemented Using an Array - Basic Tests
+-----------------------------------------------------
+
+[TEST01] Stack initialization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- BOTTOM [  ] TOP ---
+
+[TEST02] Checking a state of the stack
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stackEmpty returned 'TRUE'
+stackFull returned 'FALSE'
+
+[TEST03] Pushing a first item 'A'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- BOTTOM [ A ] TOP ---
+
+[TEST04] Checking a state of the stack again
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stackEmpty returned 'FALSE'
+stackFull returned 'FALSE'
+
+[TEST05] Reading and removing the top item
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stackTop returned 'A'
+--- BOTTOM [  ] TOP ---
+
+[TEST06] Pushing items from '0' to '7'
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--- BOTTOM [ 01234567 ] TOP ---
+
+[TEST07] Checking a state of the stack
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stackEmpty returned 'FALSE'
+stackFull returned 'TRUE'
+
+[TEST08] Removing all items one by one
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stackTop returned '7'
+stackTop returned '6'
+stackTop returned '5'
+stackTop returned '4'
+stackTop returned '3'
+stackTop returned '2'
+stackTop returned '1'
+stackTop returned '0'
+--- BOTTOM [  ] TOP ---
+
+[TEST09] Final check of the stack
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+stackEmpty returned 'TRUE'
+stackFull returned 'FALSE'
+
+
+----- C202 - The End of Basic Tests -----

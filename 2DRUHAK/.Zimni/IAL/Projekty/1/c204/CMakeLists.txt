@@ -1,0 +1,3 @@
+SET(C204 c204.c c204-test.c ../c202/c202.c)
+
+ADD_EXECUTABLE(c204 ${C204})
