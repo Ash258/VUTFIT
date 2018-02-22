@@ -10,7 +10,7 @@
 ---
 
 - [ ] IMA
-- [ ] INC
+- [x] INC
 - [ ] IOS
 - [ ] ISU
 

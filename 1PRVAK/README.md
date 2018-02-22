@@ -103,7 +103,69 @@
 | Cvičení      | 10    |
 | Domácí úlohy | 30    |
 | Semestrálka  | 60    |
-<!-- TODO: Copy from Main README.md -->
+
+- [x] Týmové domácí úlohy (2x)
+    - [x] 1. (15 bodů)
+    - [x] 2. (15 bodů)
+- [x] Cvika (13x)
+    - [x] [1. (Vstupní písemka za max 5 premiových bodů)](./Letni/IMA/Testy/1%20-%20Vstupní.pdf "Vstupní")
+    - [x] 2.
+    - [x] 3.
+    - [x] 4.
+    - [x] 5.
+    - [x] 6.
+    - [x] 7.
+    - [x] 8.
+    - [x] 9.
+    - [x] 10.
+    - [x] 11.
+    - [x] 12.
+    - [x] 13.
+- [x] Průběžné písemky
+    - Píší se ve skupině až 4 lidí.
+    - [x] 1 - Grafy
+        - [A](./Letni/IMA/Testy/Průběžné/1/A.pdf "A")
+        - [B](./Letni/IMA/Testy/Průběžné/1/B.pdf "B")
+        - [C](./Letni/IMA/Testy/Průběžné/1/C.pdf "C")
+        - [D](./Letni/IMA/Testy/Průběžné/1/D.pdf "D")
+        - [E](./Letni/IMA/Testy/Průběžné/1/E.pdf "E")
+        - [F](./Letni/IMA/Testy/Průběžné/1/F.pdf "F")
+        - [G](./Letni/IMA/Testy/Průběžné/1/G.pdf "G")
+        - [H](./Letni/IMA/Testy/Průběžné/1/H.pdf "H")
+    - [x] 2 - Integrály
+        - [A](./Letni/IMA/Testy/Průběžné/2/A.pdf "A")
+        - [B](./Letni/IMA/Testy/Průběžné/2/B.pdf "B")
+        - [C](./Letni/IMA/Testy/Průběžné/2/C.pdf "C")
+        - [D](./Letni/IMA/Testy/Průběžné/2/D.pdf "D")
+        - [E](./Letni/IMA/Testy/Průběžné/2/E.pdf "E")
+        - [F](./Letni/IMA/Testy/Průběžné/2/F.pdf "F")
+        - [G](./Letni/IMA/Testy/Průběžné/2/G.pdf "G")
+        - [H](./Letni/IMA/Testy/Průběžné/2/H.pdf "H")
+    - [x] 3
+        - [A](./Letni/IMA/Testy/Průběžné/3/A.pdf "A")
+        - [B](./Letni/IMA/Testy/Průběžné/3/B.pdf "B")
+        - [C](./Letni/IMA/Testy/Průběžné/3/C.pdf "C")
+        - [D](./Letni/IMA/Testy/Průběžné/3/D.pdf "D")
+        - [E](./Letni/IMA/Testy/Průběžné/3/E.pdf "E")
+        - [F](./Letni/IMA/Testy/Průběžné/3/F.pdf "F")
+        - [G](./Letni/IMA/Testy/Průběžné/3/G.pdf "G")
+        - [H](./Letni/IMA/Testy/Průběžné/3/H.pdf "H")
+- [x] Zápočet
+    - Minimálně 10 bodů za semestr
+- [x] Semestrálka
+    - Předtermín
+        - [A](./Letni/IMA/Testy/2%20-%20Předtermín/A.pdf "A")
+        - [B](./Letni/IMA/Testy/2%20-%20Předtermín/B.pdf "B")
+        - [E](./Letni/IMA/Testy/2%20-%20Předtermín/E.pdf "E")
+        - [F](./Letni/IMA/Testy/2%20-%20Předtermín/F.pdf "F")
+    - Řádný
+        - [A](./Letni/IMA/Testy/3%20-%20Řádný/A.pdf "A")
+        - [B](./Letni/IMA/Testy/3%20-%20Řádný/B.pdf "B")
+        - [C](./Letni/IMA/Testy/3%20-%20Řádný/C.pdf "C")
+        - [D](./Letni/IMA/Testy/3%20-%20Řádný/D.pdf "D")
+    - 1\. opravný
+        - [E](./Letni/IMA/Testy/4%20-%201.%20opravný/E.pdf "E")
+        - [F](./Letni/IMA/Testy/4%20-%201.%20opravný/F.pdf "F")
 
 ## [INC](https://www.fit.vutbr.cz/study/courses/index.php?id=11455 "INC")
 
