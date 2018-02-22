@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  c_develop:
+    build: .
+    container_name: IOS1
+    working_dir: /code
+    command: tail -f /dev/null
+    volumes:
+      - .:/code

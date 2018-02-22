@@ -1,0 +1,188 @@
+#!/usr/bin/env bash
+
+###### First project to IOS
+###### @author Jakub "Ash258" Čábera <xcaber00@stud.fit.vutbr.cz>
+###### Slow as hell 😂
+
+# Precondition from project definition.
+POSIXLY_CORRECT=yes
+
+######region Variables
+DIRECTORY= # Directory, which will be analyzed.
+FILES_COUNT=
+DIRS_COUNT=
+
+NORM= # Is n triggered?
+REG= # Is i triggered?
+PAT="[^.]\*"
+
+OUTPUT_LIMIT=40
+OUTPUT_LIMIT_NON_T=79
+OUTPUT_SIZE_LENGTH=12 # 2 spaces + "<" + size + ":" + space
+OUTPUT_TYPE_LENGTH=47 # 2 spaces + 40 chars (name) + 3 dots + ":" + 1 last space
+
+FS_HASHTAGS='Cosi' # Number of chars after OUTPUT_SIZE_LENGTH and tput-cols -1; Cosi = default value for comparison.
+FT_HASHTAGS='Cosi' # Number of chars after OUTPUT_TYPE_LENGTH and tput-cols -1; Cosi = default value for comparison.
+######endregion
+
+######region AWK Functions
+######   It allows language C.
+# Calculate and print hashtags.
+format='{
+	printf("%s", $2);
+
+	if (hash == "Cosi"){
+		count = $1;
+	} else {
+		if (ratio <= 0){
+			count = 0;
+		} else {
+			count = ($1 * hash) /ratio;
+		}
+	}
+
+	for (i = 0; i < count; i++) printf "#";
+
+	printf("\n");
+}'
+
+# Cut and append long file description.
+shorten='{
+	# len = 40
+	if (length($0) > len) $0 = substr($0, 1, len) "...";
+	# %- == print from left x chars
+	# len X +3 (3 dots)
+	printf("  %-" (len+3) "s: \n", $0);
+}'
+######endregion
+
+#######region Functions
+usage(){
+	echo "Usage: $0 [-i FILE_ERE] [-n] [DIR]" >&2
+	exit 1
+}
+
+# Custom find function. Prevent code repetition.
+find258() {
+	if [ "$1" = "d" ] ; then
+		# List all directories, Don't remove parent (from definition ND > 0), Grep only nonmatching folders
+		find ${DIRECTORY} -type d | egrep -v "$PAT"
+		# List all directories, Remove parent folder, Grep only nonmatching folders
+		# This should be uncommented if someone want to know correct folder count
+		#find ${DIRECTORY} -type d | sed '1d' | egrep -v "$PAT"
+	else
+		find ${DIRECTORY} -type f | sed 's/^\.\///' | egrep -v "$PAT"
+	fi
+}
+
+# Initialize variables and prepare environment to run script.
+bootstrap() {
+	DIRECTORY=${1:-"."}
+	DIRS_COUNT=`find258 d | wc -l`
+	FILES_COUNT=`find258 f | wc -l`
+
+	if [ ${DIRS_COUNT} = 0 ] ; then
+		echo "Cannot process with no directories." >&2
+		exit 1;
+	fi
+
+	# If normalization (length is non-zero) and its run in terminal
+	if test -n "$NORM" && test -t; then
+		terminal=$((`tput cols` - 1))
+		FT_HASHTAGS=$((terminal - OUTPUT_TYPE_LENGTH))
+		FS_HASHTAGS=$((terminal - OUTPUT_SIZE_LENGTH))
+	elif test -n "$NORM"; then
+		FT_HASHTAGS=$((OUTPUT_LIMIT_NON_T - OUTPUT_TYPE_LENGTH))
+		FS_HASHTAGS=$((OUTPUT_LIMIT_NON_T - OUTPUT_SIZE_LENGTH))
+	fi
+}
+
+# Subfunction to FSHIST. It totally make code clear and easy to read.
+# Will receive 3 parameters
+#			- size
+#           - condition
+#           - category
+processFSHIST() {
+	# Print sizes.
+	echo "$1" | awk "$2" | wc -l |
+	# Print full third argument.
+	awk "{print \$0 \"$3\"}" |
+#	awk '{print $0}' |
+	# _258_ = Field separator
+	# Fill awk variables and format output.
+	awk -F '_258_' -v "hash=$FS_HASHTAGS" -v "ratio=$FILES_COUNT" "$format"
+}
+
+FSHIST() {
+	if [ ${FILES_COUNT} = 0 ] ; then
+		return
+	fi
+
+	# Size is at column 5
+	files_size=`find258 |
+				xargs -I 'Cosi' ls -l 'Cosi' |
+				awk -F " " '{print $5}'`
+
+	processFSHIST "$files_size" '$0 <  100'                             "_258_  <100 B  : "
+	processFSHIST "$files_size" '$0 >= 100 && $0 < 1024'                "_258_  <1 KiB  : "
+	processFSHIST "$files_size" '$0 >= 1024 && $0 < 10240'              "_258_  <10 KiB : "
+	processFSHIST "$files_size" '$0 >= 10240 && $0 < 102400'            "_258_  <100 KiB: "
+	processFSHIST "$files_size" '$0 >= 102400 && $0 < 1048576'          "_258_  <1 MiB  : "
+	processFSHIST "$files_size" '$0 >= 1048576 && $0 < 10485760'        "_258_  <10 MiB : "
+	processFSHIST "$files_size" '$0 >= 10485760 && $0 < 104857600'      "_258_  <100 MiB: "
+	processFSHIST "$files_size" '$0 >= 104857600 && $0 < 1073741824'    "_258_  <1 GiB  : "
+	processFSHIST "$files_size" '$0 >= 1073741824'                      "_258_  >=1 GiB : "
+}
+
+FTHIST() {
+	# Find all files (+ info).
+	find258 | xargs -I 'Cosi' file 'Cosi' |
+	#@see https://superuser.com/a/642932
+	tail -n +1 |
+	# Remove filename and spaces.
+	awk -F ":" '{ print $2 }' | sed 's/^[[:blank:]]*//' |
+	# Shorten output (40 chars).
+	awk -v "len=$OUTPUT_LIMIT" "$shorten" |
+	# Sort, Count unique lines, Sort from the highest to lowest.
+	sort -b | uniq -c | sort -bgr |
+	# Remove spaces at line start, Insert divider after counter.
+	sed 's/^[[:blank:]]*//' | sed 's/[[:blank:]]/_258_/' |
+	# Limit output to 10 lines
+	head -n 10 |
+	# Separate by "_258_", Fill awk variables and format output.
+	awk -F '_258_' -v "hash=$FT_HASHTAGS" -v "ratio=$FILES_COUNT" "$format"
+}
+######endregion
+
+######region Main
+#Parameters handling
+while getopts "ni:" option; do
+	case "${option}" in
+		i)
+			REG=true
+			PAT="$OPTARG"
+			if [ "$(echo "!$OPTARG" | head -c 2)" = "!-" ]; then
+				echo "Invalid parameter of -i" >&2
+				exit 1
+			fi
+		;;
+		n) NORM=true ;;
+		--help | -h | \?) usage ;;
+		:)
+			echo "Option -$OPTARG requires an argument." >&2
+			exit 1
+		;;
+	esac
+done
+shift $(( OPTIND - 1 ))
+
+bootstrap "$1"
+echo "Root directory:" ${DIRECTORY}
+echo "Directories:" ${DIRS_COUNT}
+echo "All files:" ${FILES_COUNT}
+echo "File size histogram:"
+FSHIST
+echo "File type histogram:"
+FTHIST
+exit 0
+######endregion
