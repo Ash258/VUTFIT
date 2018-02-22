@@ -112,7 +112,14 @@
 | Půlsemestrálka | 25    |
 | Projekt        | 20    |
 | Semestrálka    | 55    |
-<!-- TODO: Copy from Main README.md -->
+
+- [x] [Půlsemestrálka](./Letni/INC/Testy/1%20-%20Půlsemestrálka.md "Půlsemestrálka")
+- [x] [Projekt (17/20 bodů)](./Letni/INC/Projekt/ "Projekt")
+- [x] Zápočet
+    - Minimálně 5 bodů z projektu
+- [x] Semestrálka (min 25b)
+    - [Řádný](./Letni/INC/Testy/2%20-%20Řádný.md "Řádný")
+    - [2. opravný](./Letni/INC/Testy/3%20-%202.%20opravný.md "2. opravný")
 
 ## [IOS](https://www.fit.vutbr.cz/study/courses/index.php?id=11462 "IOS")
 

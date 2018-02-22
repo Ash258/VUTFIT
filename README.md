@@ -4,7 +4,7 @@
 
 - [x] IDA
 - [x] IEL
-- [ ] IUS
+- [x] IUS
 - [x] IZP
 
 ---
