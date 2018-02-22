@@ -26,6 +26,6 @@
 - [x] IFJ
 - [ ] INM
 - [x] INP
-- [ ] ISS
+- [x] ISS
 
 ## [Třeťák](./3TRETAK/ "Třeťák")

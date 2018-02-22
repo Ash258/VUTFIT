@@ -28,7 +28,6 @@
 | Půlsemestrálka | 15    |
 | Projekt        | 12    |
 | Semestrálka    | 55    |
-<!-- TODO: Copy from Main README.md -->
 
 - [x] Cvika (6x)
     - Možnost uznání bodů (přihlašování ve wisu)
@@ -44,6 +43,9 @@
 - [x] Zápočet
     - [x] Minimálně 3 body z projektu
     - [x] Minimálně 6 bodů ze cvik
+- [x] [Semestrálka (min 27b)](./.Zimni/IEL/Testy/Předtermín.pdf "Předtermín")
+    - [Postup](https://www.youtube.com/watch?v=G4SOhYsZGl0 "Jak na příklady z předtermínu")
+    - [Postup2](https://www.youtube.com/watch?v=WLKX7aQnGC0 "Jak na příklady z předtermínu")
 
 ## [IUS](https://www.fit.vutbr.cz/study/courses/index.php?id=11491 "IUS")
 
