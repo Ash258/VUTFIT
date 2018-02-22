@@ -51,7 +51,30 @@
 | :---------- | :---: |
 | Cvičení     | 30    |
 | Semestrálka | 70    |
-<!-- TODO: Copy from Main README.md -->
+
+- [x] [Cvika](./.Zimni/INM/Cvika.md "Novák")
+    - [x] 1.
+    - [x] 2. (3 body)
+    - [x] 3. (3 body)
+    - [x] 4. (3 body)
+    - [x] 5.
+    - [x] 6.
+    - [x] 7. (3 body)
+    - [x] 8. (3 body)
+    - [x] 9. (3 body)
+    - [x] 10. (3 body)
+    - [x] 11. (3 body)
+    - [x] 12. (3 body)
+    - [x] 13. (3 body)
+- [x] Zápočet
+    - Minimálně 10 bodů ze cvik
+- [x] Semestrálka
+    - Řádný
+        - [A](./.Zimni/INM/Testy/1%20-%20Řádný/A.md "A")
+        - [B](./.Zimni/INM/Testy/1%20-%20Řádný/B.md "B")
+        - [C](./.Zimni/INM/Testy/1%20-%20Řádný/C.md "C")
+        - [D](./.Zimni/INM/Testy/1%20-%20Řádný/D.md "D")
+    - [2. opravný](./.Zimni/INM/Testy/2%20-%202.%20opravný.md "2. opravný")
 
 ## [INP](https://www.fit.vutbr.cz/study/courses/index.php?id=11962 "INP")
 
@@ -78,7 +101,6 @@
 | Půlsemestrálka | 25    |
 | Projekt        | 12    |
 | Semestrálka    | 51    |
-<!-- TODO: Copy from Main README.md -->
 
 - [x] Numerická cvika
     - Každé za 2 body.
@@ -100,6 +122,34 @@
 - [x] [Projekt (5/12 bodů)](./.Zimni/ISS/Projekt/ "Projekt")
     - [Zadání](./.Zimni/ISS/Projekt/Zadání.pdf "Zadání")
     - [Signály](https://www.fit.vutbr.cz/study/courses/ISS/private/proj2017-18/sig_students/ "Signály")
+- [x] Semestrálka (min 17b)
+    - 2017/2018
+        - Řádný
+            - [A](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/A.pdf "A") - [řešení](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/A%20-%20řešení.pdf "řešení")
+            - [B](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/B.pdf "B") - [řešení](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/B%20-%20řešení.pdf "řešení")
+            - [C](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/C.pdf "C") - [řešení](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/C%20-%20řešení.pdf "řešení")
+            - [D](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/D.pdf "D") - [řešení](./.Zimni/ISS/Testy/2017/2%20-%20Řádný/D%20-%20řešení.pdf "řešení")
+        - 1\. opravný
+            - [A](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/A.pdf "A") - [řešení](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/A%20-%20řešení.pdf "řešení")
+            - [B](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/B.pdf "B") - [řešení](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/B%20-%20řešení.pdf "řešení")
+            - [C](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/C.pdf "C") - [řešení](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/C%20-%20řešení.pdf "řešení")
+            - [D](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/D.pdf "D") - [řešení](./.Zimni/ISS/Testy/2017/3%20-%201.%20opravný/D%20-%20řešení.pdf "řešení")
+    - 2016/2017
+        - Řádný
+            - [A](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/A.pdf "A") - [řešení](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/A%20-%20řešení.pdf "řešení")
+            - [B](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/B.pdf "B") - [řešení](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/B%20-%20řešení.pdf "řešení")
+            - [C](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/C.pdf "C") - [řešení](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/C%20-%20řešení.pdf "řešení")
+            - [D](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/D.pdf "D") - [řešení](./.Zimni/ISS/Testy/2016/2%20-%20Řádný/D%20-%20řešení.pdf "řešení")
+        - 1\. opravný
+            - [A](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/A.pdf "A") - [řešení](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/A%20-%20řešení.pdf "řešení")
+            - [B](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/B.pdf "B") - [řešení](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/B%20-%20řešení.pdf "řešení")
+            - [C](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/C.pdf "C") - [řešení](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/C%20-%20řešení.pdf "řešení")
+            - [D](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/D.pdf "D") - [řešení](./.Zimni/ISS/Testy/2016/3%20-%201.%20opravný/D%20-%20řešení.pdf "řešení")
+        - 2\. opravný
+            - [A](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/A.pdf "A") - [řešení](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/A%20-%20řešení.pdf "řešení")
+            - [B](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/B.pdf "B") - [řešení](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/B%20-%20řešení.pdf "řešení")
+            - [C](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/C.pdf "C") - [řešení](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/C%20-%20řešení.pdf "řešení")
+            - [D](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/D.pdf "D") - [řešení](./.Zimni/ISS/Testy/2016/4%20-%202.%20opravný/D%20-%20řešení.pdf "řešení")
 
 ## [BAN4](https://www.fit.vutbr.cz/study/courses/index.php?id=12061 "BAN4")
 

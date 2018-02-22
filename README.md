@@ -12,7 +12,7 @@
 - [x] IMA
 - [x] INC
 - [x] IOS
-- [ ] ISU
+- [x] ISU
 
 ---
 
@@ -24,7 +24,7 @@
 
 - [x] IAL
 - [x] IFJ
-- [ ] INM
+- [x] INM
 - [x] INP
 - [x] ISS
 
