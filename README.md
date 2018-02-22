@@ -3,7 +3,7 @@
 ## [Prvák](./1PRVAK/ "Prvák")
 
 - [x] IDA
-- [ ] IEL
+- [x] IEL
 - [ ] IUS
 - [x] IZP
 

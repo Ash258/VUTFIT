@@ -54,7 +54,6 @@
 | Cvičení | 15    |
 | Projekt | 25    |
 | Zkouška | 60    |
-<!-- TODO: Copy from Main README.md -->
 
 - [x] Cvika (3x)
     - [x] 1. - Specifikace požadavků v UML
@@ -65,6 +64,7 @@
     - Možnost uznání bodů (přihlašování ve wisu)
 - [x] Zápočet
     - Minimálně 18 bodů za semestr
+- [x] [Semestrálka (min 28b)](./.Zimni/IUS/Semestrálka.md "Semestrálka")
 
 ## [IZP](https://www.fit.vutbr.cz/study/courses/index.php?id=11499 "IZP")
 
