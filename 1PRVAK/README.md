@@ -65,6 +65,11 @@
 - [x] Zápočet
     - Minimálně 18 bodů za semestr
 - [x] [Semestrálka (min 28b)](./.Zimni/IUS/Semestrálka.md "Semestrálka")
+    - [Řádný](./.Zimni/IUS/Testy/1%20-%20Řádný.md "Řádný")
+    - [1. opravný](./.Zimni/IUS/Testy/2%20-%201.%20opravný.md "1. opravný")
+    - [2. opravný](./.Zimni/IUS/Testy/3%20-%202.%20opravný.md "2. opravný")
+    - [3. opravný](./.Zimni/IUS/Testy/4%20-%203.%20opravný.md "3. opravný")
+    - [4. opravný](./.Zimni/IUS/Testy/5%20-%204.%20opravný.md "4. opravný")
 
 ## [IZP](https://www.fit.vutbr.cz/study/courses/index.php?id=11499 "IZP")
 
