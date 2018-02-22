@@ -211,7 +211,25 @@
 | Cvičení        | 24    |
 | Půlsemestrálka | 16    |
 | Semestrálka    | 60    |
-<!-- TODO: Copy from Main README.md -->
+
+- [x] [Půlsemestrálka](./Letni/ISU/Testy/1%20-%20Půlsemestrálka.md "Půlsemestrálka")
+- [x] Cvika (13x)
+    - [x] 1.
+    - [x] 2.
+    - [x] 3.
+    - [x] 4.
+    - [x] 5.
+    - [x] 6. (6 bodů)
+    - [x] 7.
+    - [x] 8.
+    - [x] 9.
+    - [x] 10. (11 bodů)
+    - [x] 11.
+    - [x] 12.
+    - [x] 13. (7 bodů)
+- [x] Zápočet
+    - Minimálně 15 bodů za semestr
+- [x] [Semestrálka (min 25b)](./Letni/ISU/Testy/2%20-%202.%20opravný.md "Semestrálka (min 25b)")
 
 <!-- region Done -->
 
