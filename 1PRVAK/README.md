@@ -190,7 +190,19 @@
 | Půlsemestrálka | 10    |
 | Projekty       | 30    |
 | Semestrálka    | 60    |
-<!-- TODO: Copy from Main README.md -->
+
+- [Demo](./Letni/IOS/Demo.md "Demo")
+- [x] Projekty
+    - [x] [1.(13/15 bodů)](./Letni/IOS/Projekty/1/ "1.")
+    - [x] [2.(13/15 bodů)](./Letni/IOS/Projekty/2/ "2.")
+    - Možnost uznání bodů
+- [x] [Půlsemestrálka](./Letni/IOS/Testy/1%20-%20Půlsemestrálka.md "Půlsemestrálka")
+- [x] Zápočet
+    - Minimálně 15 bodů z projektů
+- [x] Semestrálka (min 32b)
+    - [Řádný](./Letni/IOS/Testy/2%20-%20Řádný.md "Řádný")
+    - [1. opravný](./Letni/IOS/Testy/3%20-%201.%20opravný.md "1. opravný")
+    - [2. opravný](./Letni/IOS/Testy/4%20-%202.%20opravný.md "2. opravný")
 
 ## [ISU](https://www.fit.vutbr.cz/study/courses/index.php?id=11420 "ISU")
 
