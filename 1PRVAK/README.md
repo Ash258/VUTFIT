@@ -244,7 +244,7 @@
 | Půlsemestrálka | 9     |
 | Semestrálka    | 51    |
 
-- [x] Projekty (6x)
+- [x] [Projekty (6x)]((./Letni/ISJ/Projekty/ "Projekty")
     - [x] [1 (5/5 bodů)](./Letni/ISJ/Projekty/proj1/ "1 (5/5 bodů)")
     - [x] [2 (5/5 bodů)](./Letni/ISJ/Projekty/proj2/ "2 (5/5 bodů)")
     - [x] [3 (5/5 bodů)](./Letni/ISJ/Projekty/proj3/ "3 (5/5 bodů)")
