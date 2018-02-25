@@ -34,19 +34,19 @@
 
 # Ostatní užitečné repozitáře
 
-- https://github.com/vokracko?tab=repositories
-- https://github.com/romanblanco/school-projects
-- https://github.com/Raiper34/FIT-projects
-- https://github.com/kzaklova/FIT
-- https://github.com/marusak/School
-- https://github.com/xjezov01/FIT-VUT
-- https://github.com/s3rvac/fit-projects
-- https://github.com/tumido/FIT-VUT-projects
-- https://github.com/Trsak
-- https://github.com/mrc0mmand/SchoolProjects
-- https://github.com/harmim/vut-isu-labs
-- https://github.com/barnaa/FIT_VUT_Bc_Studium_Projects
-- https://github.com/fkolacek/FIT-VUT
-- https://bitbucket.org/dlxko/vut-fit-bit/src
-- https://github.com/blaskovic/SchoolProjects
-- http://school.aldred.cz/
+- [Trsak](https://github.com/Trsak?tab=repositories "Trsak")
+- [kzaklova](https://github.com/kzaklova/FIT "kzaklova")
+- [Vokracko](https://github.com/vokracko?tab=repositories "Vokracko")
+- [Romanblanco](https://github.com/romanblanco/school-projects "Romanblanco")
+- [Raiper34](https://github.com/Raiper34/FIT-projects "Raiper34")
+- [Marusak](https://github.com/marusak/School "Marusak")
+- [xjezov01](https://github.com/xjezov01/FIT-VUT "xjezov01")
+- [S3rvac](https://github.com/s3rvac/fit-projects "S3rvac")
+- [Tumido](https://github.com/tumido/FIT-VUT-projects "Tumido")
+- [Mrc0mmand](https://github.com/mrc0mmand/SchoolProjects "Mrc0mmand")
+- [Harmin](https://github.com/harmim/vut-isu-labs "Harmin")
+- [Barnaa](https://github.com/barnaa/FIT_VUT_Bc_Studium_Projects "Barnaa")
+- [Fkolacek](https://github.com/fkolacek/FIT-VUT "Fkolacek")
+- [Dlxko](https://bitbucket.org/dlxko/vut-fit-bit "Dlxko")
+- [Blaskovic](https://github.com/blaskovic/SchoolProjects "Blaskovic")
+- [Aldred](http://school.aldred.cz/ "Aldred")
